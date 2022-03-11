@@ -1,0 +1,109 @@
+body {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    .header {
+        width: 200px;
+        height: 100px;
+        background-color: violet;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .create {
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow: 2px 2px violet;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.modal {
+    width: 100%;
+    height: 500px;
+    background-color: violet;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 3%;
+    .heading {
+        color: #000;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 5px 5px #000;
+    }
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+    }
+    .heading-list {
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        position: absolute;
+        right: 12px;
+        top: 57px;
+        font-size: 14px;
+        color: #000;
+        display: none;
+        align-items: center;
+        margin: auto;
+        &::before {
+            content: " ";
+            border-style: solid;
+            position: absolute;
+            border-width: 18px 25px;
+            position: absolute;
+            border-color: transparent transparent #fff transparent;
+            right: 1px;
+            top: -30px;
+        }
+    }
+    .success {
+        margin-right: 20rem;
+    }
+    .btn {
+        position: absolute;
+        top: 70%;
+        right: 32%;
+        font-size: 18px;
+        padding: 15px;
+    }
+    .onclear {
+        padding: 10px;
+        font-size: 14px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+}
+
+.open {
+    display: flex;
+}
+
+.support {
+    display: flex !important;
+}
